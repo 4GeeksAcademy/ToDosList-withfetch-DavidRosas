@@ -24,7 +24,7 @@ const Home = () => {
 							setNewTask("")
 						}
 					}}
-					
+
 					value={newTask} className="form-control m-5" 
 				/>
 
@@ -41,7 +41,7 @@ const Home = () => {
 
 export default Home;
 
-// use filter to remove the tasks
+// use filter funtion to remove the tasks
 
 
 
