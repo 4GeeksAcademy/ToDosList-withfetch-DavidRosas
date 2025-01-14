@@ -9,3 +9,19 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body {
+    background-color: lightgray;
+}
+
+i {
+    color: lightcoral;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+input {
+    width: 1000px !important;
+}
+
