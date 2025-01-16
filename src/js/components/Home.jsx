@@ -5,6 +5,17 @@ import { useState } from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
+
+const erlApi = "1" 
+
+const fetchTasks = [""]
+
+
+
+
+
+
+
 const Home = () => {
 
 	const [newTask, setNewTask] = useState("")
@@ -37,9 +48,12 @@ const Home = () => {
 	return (
 		<div className=" m-5 ">
 			<p className="text-center" style={{ fontSize: "70px" }}>ToDos</p>
+
 			<div className="d-flex row aling-items-center justify-content-center">
-				<div className="d-flex">
+
+				<div className="d-flex input-group-lg">
 					<input
+						placeholder="Type your pending task here..."
 						type="text"
 						onChange={(event) => {
 							setNewTask(event.target.value)
@@ -54,6 +68,8 @@ const Home = () => {
 
 						value={newTask}
 						className="form-control mx-auto"
+						aria-describedby="inputGroup-sizing-lg"
+						aria-label="Sizing example input"
 					/>
 				</div>
 
